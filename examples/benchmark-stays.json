@@ -1,0 +1,132 @@
+{
+  "synthetic": true,
+  "cases": [
+    {
+      "scenario": "year_of_two_recurring_places_with_jitter",
+      "synthetic": true,
+      "source_observations": 105120,
+      "interval_seconds": 300,
+      "before": {
+        "samples": 105120,
+        "stored_rows": 105120,
+        "stationary_runs": 0,
+        "schema_version": 2,
+        "database_bytes": 3330048,
+        "freelist_pages": 0,
+        "bytes_per_sample_including_schema": 31.68,
+        "timing_and_summary_bytes": 0,
+        "range_query_plan": [
+          "SEARCH samples USING PRIMARY KEY (subject_id=? AND observed_at>? AND observed_at<?)"
+        ],
+        "bounded_report_ms": 21.404,
+        "bounded_report_observations": 2016
+      },
+      "after": {
+        "samples": 105120,
+        "stored_rows": 731,
+        "stationary_runs": 731,
+        "schema_version": 2,
+        "database_bytes": 77824,
+        "freelist_pages": 0,
+        "bytes_per_sample_including_schema": 0.74,
+        "timing_and_summary_bytes": 11498,
+        "range_query_plan": [
+          "SEARCH samples USING PRIMARY KEY (subject_id=? AND observed_at>? AND observed_at<?)"
+        ],
+        "bounded_report_ms": 0.517,
+        "bounded_report_observations": 2016
+      },
+      "space_reduction_percent": 97.66,
+      "row_reduction_percent": 99.3,
+      "exact_timestamp_fingerprint_matches": true,
+      "standalone_database_bytes": 77824,
+      "scope": "Schema and index included; point baseline uses v2 columns. Runtime, credentials, WAL and backup excluded."
+    },
+    {
+      "scenario": "eight_hours_stationary_at_one_hz",
+      "synthetic": true,
+      "source_observations": 28801,
+      "interval_seconds": 1,
+      "before": {
+        "samples": 28801,
+        "stored_rows": 28801,
+        "stationary_runs": 0,
+        "schema_version": 2,
+        "database_bytes": 942080,
+        "freelist_pages": 0,
+        "bytes_per_sample_including_schema": 32.71,
+        "timing_and_summary_bytes": 0,
+        "range_query_plan": [
+          "SEARCH samples USING PRIMARY KEY (subject_id=? AND observed_at>? AND observed_at<?)"
+        ],
+        "bounded_report_ms": 302.394,
+        "bounded_report_observations": 28801
+      },
+      "after": {
+        "samples": 28801,
+        "stored_rows": 1,
+        "stationary_runs": 1,
+        "schema_version": 2,
+        "database_bytes": 36864,
+        "freelist_pages": 0,
+        "bytes_per_sample_including_schema": 1.28,
+        "timing_and_summary_bytes": 16,
+        "range_query_plan": [
+          "SEARCH samples USING PRIMARY KEY (subject_id=? AND observed_at>? AND observed_at<?)"
+        ],
+        "bounded_report_ms": 0.145,
+        "bounded_report_observations": 28801
+      },
+      "space_reduction_percent": 96.09,
+      "row_reduction_percent": 100.0,
+      "exact_timestamp_fingerprint_matches": true,
+      "standalone_database_bytes": 36864,
+      "scope": "Schema and index included; point baseline uses v2 columns. Runtime, credentials, WAL and backup excluded."
+    },
+    {
+      "scenario": "one_hour_continuous_movement",
+      "synthetic": true,
+      "source_observations": 3600,
+      "interval_seconds": 1,
+      "before": {
+        "samples": 3600,
+        "stored_rows": 3600,
+        "stationary_runs": 0,
+        "schema_version": 2,
+        "database_bytes": 151552,
+        "freelist_pages": 0,
+        "bytes_per_sample_including_schema": 42.1,
+        "timing_and_summary_bytes": 0,
+        "range_query_plan": [
+          "SEARCH samples USING PRIMARY KEY (subject_id=? AND observed_at>? AND observed_at<?)"
+        ],
+        "bounded_report_ms": 36.847,
+        "bounded_report_observations": 3600
+      },
+      "after": {
+        "samples": 3600,
+        "stored_rows": 515,
+        "stationary_runs": 515,
+        "schema_version": 2,
+        "database_bytes": 61440,
+        "freelist_pages": 0,
+        "bytes_per_sample_including_schema": 17.07,
+        "timing_and_summary_bytes": 7208,
+        "range_query_plan": [
+          "SEARCH samples USING PRIMARY KEY (subject_id=? AND observed_at>? AND observed_at<?)"
+        ],
+        "bounded_report_ms": 9.685,
+        "bounded_report_observations": 3600
+      },
+      "space_reduction_percent": 59.46,
+      "row_reduction_percent": 85.69,
+      "exact_timestamp_fingerprint_matches": true,
+      "standalone_database_bytes": 61440,
+      "scope": "Schema and index included; point baseline uses v2 columns. Runtime, credentials, WAL and backup excluded."
+    }
+  ],
+  "elapsed_seconds": 6.025,
+  "python": "3.13.15",
+  "sqlite": "3.50.4",
+  "platform": "Windows"
+}

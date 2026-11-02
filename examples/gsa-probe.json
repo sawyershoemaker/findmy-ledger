@@ -1,0 +1,18 @@
+{
+  "synthetic": true,
+  "description": "Illustrative unauthenticated challenge statuses; not a live acceptance record.",
+  "credential_free": true,
+  "tls_certificate_verified": true,
+  "account_sign_in_attempted": false,
+  "requests": [
+    {
+      "client": "old_xcode_identifier",
+      "http_status": 503
+    },
+    {
+      "client": "current_akd_identifier",
+      "http_status": 401
+    }
+  ],
+  "interpretation": "A 401 response to a deliberately unauthenticated request does not establish account login."
+}

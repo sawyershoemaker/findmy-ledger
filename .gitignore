@@ -1,0 +1,40 @@
+# Private operation and local environments
+data/
+work/
+runtime/
+upstream/
+captures/
+secrets/
+.venv/
+.*-venv/
+.env
+.env.*
+!.env.example
+
+# Runtime state, histories and traffic
+*.sqlite*
+*.db*
+*.dpapi
+*.har
+*.pcap*
+*.flow
+*.log
+*.pem
+!research/certificates/apple-root-g3.pem
+*.key
+*.p12
+*.pfx
+anisette-libs.tar
+
+# Build/cache outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+node_modules/
+.DS_Store
+Thumbs.db

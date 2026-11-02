@@ -1,0 +1,24 @@
+FindMy Ledger / synthetic offline demo
+
+28 calendar days | 27 observed dates | 0 network requests
+2,811 observations -> 114 stored rows
+126,976 B -> 45,056 B (64.52% smaller)
+Schema/index included; runtime, WAL, backups and place cache excluded.
+
+Monday, September 21 / America/New_York
+All place names and observations below are fictional.
+
+  08:00-08:55  Maple Corner       12 observations
+  09:00-11:55  Alder Studio       36 observations
+  12:00-12:10  Harbor Library      3 observations
+  12:10-13:00  UNKNOWN: 50 minutes between observations
+  13:00-16:55  Alder Studio       48 observations
+  17:00-17:55  Juniper Park       12 observations
+
+Four-week pattern example
+  Alder Studio appeared in Monday's 09:00 hour on 4 distinct dates
+  across 4 weeks (4 of 4 Mondays with usable evidence in that hour).
+  September 19 has no observations; it is not counted as absence.
+
+Observed spans are not exact arrivals/departures or proof of continuous presence.
+Patterns describe location evidence, not activities or a future schedule.

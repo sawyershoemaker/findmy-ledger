@@ -1,0 +1,48 @@
+{
+  "synthetic": true,
+  "network_requests": 0,
+  "participant": "synthetic-participant",
+  "timezone": "America/New_York",
+  "start_inclusive": "2026-09-07T00:00:00-04:00",
+  "end_exclusive": "2026-10-05T00:00:00-04:00",
+  "calendar_days": 28,
+  "observed_dates": 27,
+  "missing_date": "2026-09-19",
+  "before": {
+    "samples": 2811,
+    "stored_rows": 2811,
+    "stationary_runs": 0,
+    "schema_version": 2,
+    "database_bytes": 126976,
+    "freelist_pages": 0,
+    "bytes_per_sample_including_schema": 45.17
+  },
+  "after": {
+    "samples": 2811,
+    "stored_rows": 114,
+    "stationary_runs": 114,
+    "schema_version": 2,
+    "database_bytes": 45056,
+    "freelist_pages": 0,
+    "bytes_per_sample_including_schema": 16.03
+  },
+  "space_saved_percent": 64.52,
+  "example_pattern": {
+    "weekday": "Monday",
+    "hour": 9,
+    "usable_dates_in_hour": 4,
+    "place_id": "manual:2",
+    "place": "Alder Studio",
+    "dates_observed": [
+      "2026-09-07",
+      "2026-09-14",
+      "2026-09-21",
+      "2026-09-28"
+    ],
+    "distinct_days": 4,
+    "distinct_weeks": 4,
+    "sample_count": 48,
+    "fraction_of_usable_dates_in_hour": 1.0
+  },
+  "interpretation": "All names, coordinates, observations and patterns are invented. Missing data is not absence."
+}

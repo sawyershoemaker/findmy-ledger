@@ -1,0 +1,10 @@
+FindMy Ledger
+Copyright 2026 FindMy Ledger contributors
+
+Original Ledger code and documentation are licensed under Apache License 2.0.
+Adapted Onitrack material retains its MIT copyright and permission notice.
+See THIRD_PARTY_NOTICES.md and licenses/Onitrack-MIT.txt.
+
+Optional external runtimes retain their own licenses and are not included in
+this source distribution. No affiliation with or endorsement by Apple or any
+referenced upstream project is implied.

@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible problem using synthetic data.
+body:
+  - type: markdown
+    attributes:
+      value: "Please omit real locations, names, credentials, DPAPI files and captures. Prefer a synthetic reproduction. Optional runtime setup is described in docs/windows-emulator.md."
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Command and synthetic reproduction
+      description: Include expected and actual behavior.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: OS, Python and Ledger version
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Relevant redacted status fields
+      description: Share only inspected status categories and numeric codes, not raw service responses or full private logs.

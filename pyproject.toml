@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "findmy-location-ledger"
+version = "0.1.0"
+description = "Windows Find My Live collection, compact location history, and local reports"
+readme = "README.md"
+license = "Apache-2.0 AND MIT"
+license-files = ["LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md", "licenses/*.txt"]
+requires-python = ">=3.12"
+dependencies = ["tzdata>=2025.2; sys_platform == 'win32'"]
+
+[project.optional-dependencies]
+protocol = ["cryptography>=46,<48"]
+auth = ["findmy==0.10.2", "anisette==1.2.4", "setuptools<81", "cryptography>=46,<48"]
+mac-emulator = ["unicorn==2.1.4"]
+push-research = ["pypush @ git+https://github.com/JJTech0130/pypush.git@71aa2e4442061596f75e6b02dfad613330127b5b", "httpx==0.28.1", "anyio==4.15.1", "requests==2.34.2"]
+
+[project.scripts]
+location-ledger = "location_ledger.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["location_ledger*", "research*"]
+
+[tool.setuptools.package-data]
+research = ["certificates/*.pem"]

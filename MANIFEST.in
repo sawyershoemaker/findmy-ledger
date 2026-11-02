@@ -1,0 +1,12 @@
+include README.md LICENSE NOTICE THIRD_PARTY_NOTICES.md AGENTS.md CONTRIBUTING.md public-files.json .gitignore requirements-cloudkit.lock
+recursive-include licenses *.txt
+recursive-include docs *.md *.svg
+recursive-include examples *.json *.jsonl *.txt
+recursive-include scripts *.ps1
+recursive-include tests *.py
+recursive-include .github *.yml
+prune data
+prune work
+prune runtime
+prune upstream
+global-exclude *.pyc *.pyo *.dpapi *.sqlite *.sqlite-wal *.sqlite-shm *.db *.har *.pcap *.flow *.key

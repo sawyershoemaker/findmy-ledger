@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+  <title id="title">How stationary storage works</title>
+  <desc id="desc">Synthetic locations within a fixed 25 metre anchor collapse into a stay. Source times and counts remain exact at whole seconds. Interior coordinates are discarded. Movement and long gaps create separate records. A synthetic eight-hour, one-hertz benchmark represents 28,801 observations in one row.</desc>
+  <rect width="1200" height="570" fill="#f4f2eb"/>
+  <text x="48" y="54" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="3" fill="#426457">STATIONARY STORAGE</text>
+  <text x="46" y="109" font-family="Georgia,serif" font-size="44" fill="#172f2c">Small updates extend the same stay.</text>
+  <path d="M48 140h1104" stroke="#c9c9bc"/>
+  <g font-family="Segoe UI,Arial,sans-serif" fill="#334a44">
+    <text x="48" y="184" font-size="17">Incoming fixes</text>
+    <text x="48" y="208" font-size="13">Schematic · invented locations</text>
+    <text x="510" y="184" font-size="17">One compact record</text>
+    <text x="510" y="208" font-size="13">Extended at checkpoints</text>
+    <text x="906" y="184" font-size="17">New records when needed</text>
+  </g>
+  <circle cx="192" cy="294" r="67" fill="#e1e7db" stroke="#6c917f" stroke-dasharray="4 5"/>
+  <path d="M167 285l42-17-8 48-26-17 44-7-32-14 9 27" fill="none" stroke="#99b1a2" stroke-width="2"/>
+  <g fill="#315d51"><circle cx="167" cy="285" r="5"/><circle cx="209" cy="268" r="5"/><circle cx="201" cy="316" r="5"/><circle cx="175" cy="299" r="5"/><circle cx="219" cy="292" r="5"/><circle cx="187" cy="278" r="5"/><circle cx="196" cy="305" r="5"/></g>
+  <path d="M184 294h16m-8-8v16" stroke="#172f2c" stroke-width="2"/>
+  <path d="M292 294h164m-12-8 12 8-12 8" fill="none" stroke="#426457" stroke-width="2"/>
+  <text x="115" y="389" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#334a44">Fixed 25 m anchor</text>
+  <rect x="510" y="236" width="330" height="165" fill="#e1e7db"/>
+  <g font-family="Consolas,monospace" font-size="17" fill="#172f2c">
+    <text x="532" y="268">first + last source time</text>
+    <text x="532" y="300">observation count</text>
+    <text x="532" y="332">position + uncertainty</text>
+    <text x="532" y="364">compressed timing</text>
+  </g>
+  <g font-family="Segoe UI,Arial,sans-serif" fill="#334a44" font-size="17">
+    <path d="M906 250h30" stroke="#315d51" stroke-width="4"/><text x="950" y="256">Movement</text>
+    <path d="M906 300h30" stroke="#a07549" stroke-width="2" stroke-dasharray="4 4"/><text x="950" y="306">Long gaps</text>
+    <circle cx="921" cy="349" r="8" fill="none" stroke="#7e8c80" stroke-width="2"/><text x="950" y="356">Low accuracy</text>
+  </g>
+  <path d="M48 435h1104" stroke="#c9c9bc"/>
+  <text x="48" y="482" font-family="Georgia,serif" font-size="32" fill="#172f2c">28,801 observations → 1 row</text>
+  <text x="48" y="514" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#56665e">Synthetic benchmark: eight stationary hours at 1 Hz, with jitter.</text>
+  <text x="48" y="544" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#56665e">Source times retain whole-second precision; interior coordinates share one anchor and uncertainty envelope.</text>
+</svg>

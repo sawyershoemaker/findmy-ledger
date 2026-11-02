@@ -1,0 +1,30 @@
+name: Offline verification
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install portable package and offline crypto
+        run: python -m pip install -e '.[protocol]'
+      - name: Synthetic unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Reproduce offline demo
+        run: python -m research.demo --output data/ci-demo
+      - name: Validate public source manifest
+        run: python -m research.public_source --check
+      - name: Build clean source export
+        run: python -m research.public_source --output ../ledger-source-check

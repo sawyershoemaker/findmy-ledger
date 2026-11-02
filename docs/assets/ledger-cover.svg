@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">FindMy Ledger</title>
+  <desc id="desc">A headless Windows collector. Compact location history, with source times and gaps preserved. The timeline is entirely fictional.</desc>
+  <rect width="1200" height="470" fill="#f4f2eb"/>
+  <path d="M40 38h1120" stroke="#c9c9bc"/>
+  <text x="48" y="74" fill="#426457" font-family="Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="3">WINDOWS / SQLITE / HEADLESS</text>
+  <text x="45" y="177" fill="#172f2c" font-family="Georgia,serif" font-size="82" letter-spacing="-3">FindMy Ledger</text>
+  <text x="48" y="224" fill="#334a44" font-family="Segoe UI,Arial,sans-serif" font-size="25">Location updates become a readable history.</text>
+  <text x="48" y="260" fill="#56665e" font-family="Segoe UI,Arial,sans-serif" font-size="18">Compact stays. Exact source times. Honest gaps.</text>
+  <text x="48" y="320" fill="#56665e" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">A FICTIONAL MORNING</text>
+  <rect x="48" y="338" width="198" height="38" fill="#a5bca9"/>
+  <rect x="254" y="338" width="390" height="38" fill="#315d51"/>
+  <rect x="652" y="338" width="78" height="38" fill="#cba36d"/>
+  <path d="M742 357h153" stroke="#a07549" stroke-width="2" stroke-dasharray="5 6"/>
+  <rect x="906" y="338" width="246" height="38" fill="#315d51"/>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#172f2c">
+    <text x="48" y="403">08:00 / Maple Corner</text>
+    <text x="254" y="403">09:00 / Alder Studio</text>
+    <text x="742" y="403">Unknown</text>
+    <text x="906" y="403">13:00 / Alder Studio</text>
+  </g>
+  <text x="48" y="445" fill="#637166" font-family="Segoe UI,Arial,sans-serif" font-size="12">Synthetic illustration · schematic, not to scale · observation spans are not exact arrivals or departures</text>
+</svg>
